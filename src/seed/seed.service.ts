@@ -10,7 +10,7 @@ export class SeedService implements OnApplicationBootstrap {
   constructor(private readonly ordersService: OrdersService) {}
   onApplicationBootstrap() {
     // console.log('App bootstrap complete, now migrating data...');
-    // this.migrate();
+    this.migrate();
   }
 
   migrate() {
